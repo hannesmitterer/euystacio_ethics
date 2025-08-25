@@ -1,0 +1,41 @@
+[
+  {
+    "key": "ctrl+shift+a",
+    "command": "github.copilot.generate",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "workbench.action.chat.open"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "github.copilot.explain"
+  },
+  {
+    "key": "alt+\\",
+    "command": "editor.action.inlineSuggest.trigger"
+  },
+  {
+    "key": "ctrl+alt+\\",
+    "command": "editor.action.inlineSuggest.showNext"
+  },
+  {
+    "key": "ctrl+alt+shift+\\",
+    "command": "editor.action.inlineSuggest.showPrevious"
+  },
+  {
+    "key": "escape",
+    "command": "editor.action.inlineSuggest.hide",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "github.copilot.toggleCopilot"
+  },
+  {
+    "key": "f1",
+    "command": "workbench.action.showCommands",
+    "when": "editorTextFocus"
+  }
+]

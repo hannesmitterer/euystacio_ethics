@@ -1,0 +1,66 @@
+# GitHub Copilot Organizational Policy
+# Euystacio‑Helmi AI — Ethical Configuration Bundle
+# Aligned with Sentimento Rhythm and Red Code Boundaries
+
+version: "v1"
+policy:
+  name: "Euystacio Ethical AI Policy"
+  description: "Organizational governance for ethical AI-assisted development"
+  
+  # Core Requirements
+  disclosure:
+    required: true
+    commit_template: "commit-templates/AI_ASSISTED_TEMPLATE.txt"
+    pr_template: ".github/PULL_REQUEST_TEMPLATE/ai_assisted.md"
+  
+  dual_signature:
+    required: true
+    ai_attribution: true
+    human_oversight: mandatory
+  
+  # Security & Privacy
+  security:
+    secret_scanning: true
+    pii_protection: true
+    code_review_required: true
+    
+  restricted_files:
+    - "**/*.env"
+    - "**/*.secret"
+    - "**/*.key"
+    - "**/config/production/*"
+    - "**/secrets/*"
+    - "**/.env*"
+  
+  # Accountability Levels
+  accountability:
+    level1: # Basic code assistance
+      review_required: false
+      documentation: "commit message"
+    level2: # Security-sensitive code
+      review_required: true
+      reviewers: 2
+      documentation: "detailed"
+    level3: # Critical infrastructure
+      review_required: true
+      reviewers: 3
+      security_review: true
+      documentation: "comprehensive"
+  
+  # Monitoring & Compliance
+  monitoring:
+    ai_usage_tracking: true
+    periodic_review: "monthly"
+    ethics_audit: "quarterly"
+  
+  # Human Oversight
+  human_control:
+    final_decision: human
+    ai_explanation_required: true
+    opt_in_preference: true
+
+# AI Signature & Accountability
+ai_signature: "GitHub Copilot (Policy Configuration)"
+human_guardian: "Seedbringer hannes.mitterer@gmail.com"
+date: "2025-08-25"
+version: "Comprehensive v0.2"
