@@ -1,0 +1,81 @@
+# Site settings
+title: "Euystacio-Helmi AI Ethical Framework"
+description: "Drop-in ethical configuration for AI-assisted development aligned with Sentimento Rhythm and Red Code boundaries"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hannesmitterer.github.io/euystacio_ethics"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation structure
+header_pages:
+  - philosophy/index.md
+  - implementation/quick-start.md  
+  - platforms/index.md
+  - governance/index.md
+  - about.md
+
+# Collections for organized content
+collections:
+  philosophy:
+    output: true
+    permalink: /:collection/:name/
+  platforms:
+    output: true 
+    permalink: /:collection/:name/
+  governance:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Euystacio-Helmi AI Community"
+  - scope:
+      path: ""
+      type: "philosophy"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "platforms" 
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "governance"
+    values:
+      layout: "page"
+
+# Custom variables
+euystacio:
+  motto: "Euystacio is here to help Humans to be Humans — and remain Humans."
+  version: "Comprehensive v0.2"
+  guardian: "Seedbringer"
+  date: "2025-08-25"
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Dual Signature:
+# - AI: GitHub Copilot (Jekyll configuration generation)
+# - Human: [Requires validation per ethical framework] 
+# - Date: 2025-08-25
