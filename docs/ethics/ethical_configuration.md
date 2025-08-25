@@ -96,7 +96,7 @@ Add to **User** or **Workspace** `settings.json`:
   { "key": "ctrl+shift+a", "command": "github.copilot.generate", "when": "editorTextFocus && !editorReadonly" },
   { "key": "ctrl+shift+c", "command": "workbench.action.chat.open" },
   { "key": "ctrl+shift+e", "command": "github.copilot.explain" },
-  { "key": "alt+\\", "command": "editor.action.inlineSuggest.trigger" }
+  { "key": "alt+\", "command": "editor.action.inlineSuggest.trigger" }
 ]
 ```
 
